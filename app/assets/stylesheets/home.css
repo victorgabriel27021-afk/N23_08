@@ -197,14 +197,6 @@ body {
 .story-section,
 .story-transition,
 .story-final {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-}
-
-.story-section.show,
-.story-transition.show,
-.story-final.show {
   opacity: 1;
   transform: translateY(0);
 }
