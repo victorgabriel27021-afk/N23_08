@@ -522,3 +522,172 @@ body {
     font-size: 32px;
   }
 }
+
+/* CORAÇÕES DE FUNDO */
+
+.story-hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+
+.story-hearts span {
+  position: absolute;
+  font-size: 22px;
+  opacity: 0.35;
+  animation: heartFloat 5s ease-in-out infinite;
+}
+
+.story-hearts span:nth-child(1) {
+  left: 8%;
+  top: 15%;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(2) {
+  left: 22%;
+  top: 45%;
+  animation-delay: 1s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(3) {
+  left: 38%;
+  top: 25%;
+  animation-delay: 2s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(4) {
+  left: 55%;
+  top: 60%;
+  animation-delay: 3s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(5) {
+  left: 70%;
+  top: 35%;
+  animation-delay: 4s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(6) {
+  left: 82%;
+  top: 70%;
+  animation-delay: 5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(7) {
+  left: 92%;
+  top: 20%;
+  animation-delay: 6s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(8) {
+  left: 15%;
+  top: 75%;
+  animation-delay: 1.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(9) {
+  left: 30%;
+  top: 65%;
+  animation-delay: 2.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(10) {
+  left: 47%;
+  top: 80%;
+  animation-delay: 3.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(11) {
+  left: 63%;
+  top: 15%;
+  animation-delay: 4.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(12) {
+  left: 76%;
+  top: 55%;
+  animation-delay: 5.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(13) {
+  left: 88%;
+  top: 85%;
+  animation-delay: 6.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(14) {
+  left: 5%;
+  top: 50%;
+  animation-delay: 7.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(15) {
+  left: 95%;
+  top: 65%;
+  animation-delay: 8.5s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(16) {
+  left: 12%;
+  top: 90%;
+  animation-delay: 2s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(17) {
+  left: 35%;
+  top: 10%;
+  animation-delay: 4s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(18) {
+  left: 52%;
+  top: 40%;
+  animation-delay: 6s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(19) {
+  left: 73%;
+  top: 90%;
+  animation-delay: 3s;
+  color: #1e5a8a;
+}
+
+.story-hearts span:nth-child(20) {
+  left: 87%;
+  top: 45%;
+  animation-delay: 7s;
+  color: #1e5a8a;
+}
+
+@keyframes heartFloat {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateY(-35px);
+    opacity: 0.5;
+  }
+}
