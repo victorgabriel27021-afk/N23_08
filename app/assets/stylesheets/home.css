@@ -1,0 +1,525 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0D2F52, #1E5A8A);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.home h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: white;
+  color: #315a9d;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   NOSSA HISTÓRIA
+   ========================= */
+
+.story-page {
+  background: #f5f8ff;
+  color: #303945;
+  overflow: hidden;
+}
+
+.story-intro {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.story-small-title {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #5277b8;
+  margin-bottom: 20px;
+}
+
+.story-intro h1 {
+  font-size: 64px;
+  color: #315a9d;
+  margin: 0 0 25px;
+}
+
+.story-intro-text {
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+
+/* SEÇÕES */
+
+.story-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 10%;
+}
+
+.story-section:nth-child(even) {
+  background: white;
+}
+
+.story-text {
+  max-width: 500px;
+}
+
+.story-text > span {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #5277b8;
+}
+
+.story-text h2 {
+  font-size: 46px;
+  margin: 15px 0 25px;
+  color: #315a9d;
+}
+
+.story-text p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+
+/* ESPAÇO PARA FOTO */
+
+.story-photo {
+  width: 400px;
+  height: 500px;
+  background: #D9E8F5;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.story-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* TRANSIÇÃO */
+
+.story-transition {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #315a9d;
+  color: white;
+  padding: 40px 20px;
+}
+
+.story-transition p {
+  font-size: 20px;
+}
+
+.story-transition h2 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.story-transition span {
+  font-size: 35px;
+}
+
+
+/* FINAL */
+
+.story-final {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.story-final h2 {
+  font-size: 38px;
+  color: #315a9d;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   ANIMAÇÕES AO ROLAR
+   ========================= */
+
+.story-section,
+.story-transition,
+.story-final {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.story-section.show,
+.story-transition.show,
+.story-final.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   CONTADOR
+   ========================= */
+
+.love-counter {
+  min-height: 60vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #F5F8FC;
+}
+
+.love-counter > span {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #1E5A8A;
+}
+
+.love-counter h2 {
+  font-size: 46px;
+  color: #123B66;
+  margin: 15px 0 45px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.counter-box {
+  min-width: 100px;
+  padding: 20px 15px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.counter-box strong {
+  display: block;
+  font-size: 38px;
+  color: #123B66;
+}
+
+.counter-box small {
+  color: #1E5A8A;
+  font-size: 14px;
+}
+
+.counter-message {
+  margin-top: 45px;
+  font-size: 19px;
+  color: #263746;
+}
+
+.spotify-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: #1DB954;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.spotify-button:hover {
+  transform: scale(1.05);
+}
+
+.story-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.story-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.story-particles span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(30, 90, 138, 0.25);
+  animation: storyParticle 6s ease-in-out infinite;
+}
+
+.story-particles span:nth-child(1) {
+  left: 10%;
+  top: 15%;
+}
+
+.story-particles span:nth-child(2) {
+  left: 25%;
+  top: 35%;
+}
+
+.story-particles span:nth-child(3) {
+  left: 40%;
+  top: 20%;
+}
+
+.story-particles span:nth-child(4) {
+  left: 55%;
+  top: 50%;
+}
+
+.story-particles span:nth-child(5) {
+  left: 70%;
+  top: 30%;
+}
+
+.story-particles span:nth-child(6) {
+  left: 80%;
+  top: 65%;
+}
+
+.story-particles span:nth-child(7) {
+  left: 90%;
+  top: 40%;
+}
+
+@keyframes storyParticle {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.8;
+  }
+}
+
+/* =========================
+   RESPONSIVO - CELULAR
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* PÁGINA INICIAL */
+
+  .home-content {
+    padding: 25px 20px;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .home p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .home-button {
+    padding: 13px 24px;
+    font-size: 16px;
+  }
+
+
+  /* INTRODUÇÃO DA HISTÓRIA */
+
+  .story-intro {
+    min-height: 60vh;
+    padding: 50px 20px;
+  }
+
+  .story-small-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .story-intro h1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .story-intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+
+  /* SEÇÕES DA HISTÓRIA */
+
+ .story-section {
+  min-height: auto;
+  flex-direction: row;
+  gap: 20px;
+  padding: 50px 15px;
+  align-items: center;
+}
+
+.story-text {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.story-text h2 {
+  font-size: 26px;
+}
+
+.story-text p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.story-photo {
+  flex: 1;
+  width: auto;
+  max-width: 50%;
+  height: 300px;
+}
+
+  .story-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .story-text h2 {
+    font-size: 36px;
+  }
+
+  .story-text p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+
+  /* FOTOS */
+
+  .story-photo {
+    width: 100%;
+    max-width: 340px;
+    height: 420px;
+  }
+
+
+  /* TRANSIÇÃO */
+
+  .story-transition {
+    min-height: 50vh;
+    padding: 50px 20px;
+  }
+
+  .story-transition h2 {
+    font-size: 38px;
+  }
+
+  .story-transition p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+
+  /* CONTADOR */
+
+  .love-counter {
+    min-height: auto;
+    padding: 70px 20px;
+  }
+
+  .love-counter h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+
+  .counter-container {
+    gap: 10px;
+  }
+
+  .counter-box {
+    min-width: 85px;
+    padding: 15px 10px;
+  }
+
+  .counter-box strong {
+    font-size: 28px;
+  }
+
+  .counter-box small {
+    font-size: 12px;
+  }
+
+  .counter-message {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+
+  /* FINAL */
+
+  .story-final {
+    min-height: 50vh;
+    padding: 50px 20px;
+  }
+
+  .story-final h2 {
+    font-size: 32px;
+  }
+}
