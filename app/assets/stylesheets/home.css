@@ -138,8 +138,7 @@ body {
 
 .story-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -160,6 +159,12 @@ body {
 
 .story-transition p {
   font-size: 20px;
+}
+
+.story-photo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
 }
 
 .story-transition h2 {
